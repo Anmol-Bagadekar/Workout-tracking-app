@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workout Tracker</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      header {
+        background-color: #f44336;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: normal;
+      }
+      form {
+        margin: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"], input[type="number"], select {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+      input[type="submit"] {
+        display: block;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f5f5f5;
+      }
+      .success {
+        margin: 20px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+      .error {
+        margin: 20px;
+        padding: 10px;
+        background-color: #f44336;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+      footer {
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        color: #999;
+        font-size: 12px;
+        box-shadow: 0 -1px 2px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Workout Tracker</h1>
+    </header>
+    <form method="post">
+      <label for="exercise-name">Exercise Name:</label>
+      <input type="text" id="exercise-name" name="exercise_name" required>
+      <label for="sets">Sets:</label>
+      <input type="number" id="sets" name="sets" required>
+      <label for="reps">Reps:</label>
+      <input type="number" id="reps" name="reps" required>
+      <label for="weight">Weight (lbs):</label>
+      <input type="number" id="weight" name="weight" required>
+
