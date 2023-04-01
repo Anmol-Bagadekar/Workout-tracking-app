@@ -1,0 +1,4 @@
+A mini-project using Nginx web server and AWS EC2 instance.
+I served a workout tracking app webpage by fixing errors in an HTML file provided by ChatGPT, 
+creating an index.html file in the root folder of Nginx running on AWS EC2. 
+I copied the code from VS Code and pasted it into the index.html file, and voila, the workout tracking app was up and running! It was a great experience.
